@@ -4,29 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GGR472</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="heading">
-     <!-- This is a comment -->
-    <h1>Saning's GGR472 Webpage</h1>
-</div>
+        <!-- This is a comment -->
+        <h1>Saning Zhang's GGR472 Lab1 Webpage</h1>
+    </div>
 
-<div>
+    <div>
+        <p style="color: rgb(206, 62, 170); font-size: 20px;">
+            This is a map at the University of Toronto.
+            <br>
+            <a href="https://map.utoronto.ca/">UofT Map</a>
+            <br>
+        </p>
+        <br>
+        <p>
+            My GeoJSON file also includes features collected at the University of Toronto. 
+        </p>
+        
+        <a target="_blank" href="map.geojson">View my GeoJSON file code</a>
 
-   <p>
-This is a map
-    <br>
-<a href="https://www.utoronto.ca/">Click here</a>
-<br>
-<a target="_blank" href="https://www.utoronto.ca/">Click here</a>
-<div>
-    <button id="my_button"> Click me!</button>
+        <p>
+            This is my favourite dog, a Golden Retriever. Do you think it is cute?
+            <br>
+            <img src="https://silverbuttegoldenretrievers.com/_next/image?url=https%3A%2F%2Fmy.breedpost.app%2Fassets%2F3faa4d16-cd1a-4841-b671-a97243598561.jpg%2F284795110_3278657092459470_2631153640347758847_n.jpg&w=3840&q=75" 
+            alt="This is my favourite dog" style="width: 500px; height: 625px;" />
+        </p>
+    </div>
+
+    <button onclick="vote('Yes')">Yes, it is very cute!</button>
+    <button onclick="vote('No')">Not very cute</button>
+    
+
+    <div id="voteResult">
+        <p>Total votes for cute: <span id="yesVotes">0</span></p>
+        <p>Total votes for not cute: <span id="noVotes">0</span></p>
+    </div>
+
     <script src="script.js"></script>
 
-</div>
-
-
-   </p>
-   </div>
 </body>
 </html>
